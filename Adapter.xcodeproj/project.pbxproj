@@ -13,6 +13,11 @@
 		A0B6632729312A0B00000509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6632529312A0B00000509 /* Main.storyboard */; };
 		A0B6632929312A0C00000509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B6632829312A0C00000509 /* Assets.xcassets */; };
 		A0B6632C29312A0C00000509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6632A29312A0C00000509 /* LaunchScreen.storyboard */; };
+		A0B6633429312A7A00000509 /* GoogleAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6633329312A7A00000509 /* GoogleAuthenticator.swift */; };
+		A0B663362931477C00000509 /* TwitterAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B663352931477C00000509 /* TwitterAuthenticator.swift */; };
+		A0B663392931486300000509 /* AuthentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B663382931486300000509 /* AuthentificationService.swift */; };
+		A0B6633D29314AF100000509 /* GoogleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6633C29314AF100000509 /* GoogleAdapter.swift */; };
+		A0B6633F29314EB600000509 /* TwitterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6633E29314EB600000509 /* TwitterAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		A0B6632829312A0C00000509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B6632B29312A0C00000509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B6632D29312A0C00000509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B6633329312A7A00000509 /* GoogleAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticator.swift; sourceTree = "<group>"; };
+		A0B663352931477C00000509 /* TwitterAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthenticator.swift; sourceTree = "<group>"; };
+		A0B663382931486300000509 /* AuthentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationService.swift; sourceTree = "<group>"; };
+		A0B6633C29314AF100000509 /* GoogleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdapter.swift; sourceTree = "<group>"; };
+		A0B6633E29314EB600000509 /* TwitterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				A0B6631F29312A0B00000509 /* AppDelegate.swift */,
-				A0B6632129312A0B00000509 /* SceneDelegate.swift */,
 				A0B6632329312A0B00000509 /* ViewController.swift */,
+				A0B6633A29314A7A00000509 /* Adapter */,
+				A0B663372931481700000509 /* Auth */,
+				A0B6633B29314A9200000509 /* Tules */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A0B663372931481700000509 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A0B663382931486300000509 /* AuthentificationService.swift */,
+				A0B6633329312A7A00000509 /* GoogleAuthenticator.swift */,
+				A0B663352931477C00000509 /* TwitterAuthenticator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A0B6633A29314A7A00000509 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6633C29314AF100000509 /* GoogleAdapter.swift */,
+				A0B6633E29314EB600000509 /* TwitterAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A0B6633B29314A9200000509 /* Tules */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6632129312A0B00000509 /* SceneDelegate.swift */,
 				A0B6632529312A0B00000509 /* Main.storyboard */,
 				A0B6632829312A0C00000509 /* Assets.xcassets */,
 				A0B6632A29312A0C00000509 /* LaunchScreen.storyboard */,
 				A0B6632D29312A0C00000509 /* Info.plist */,
 			);
-			path = Adapter;
+			name = Tules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B6633429312A7A00000509 /* GoogleAuthenticator.swift in Sources */,
 				A0B6632429312A0B00000509 /* ViewController.swift in Sources */,
+				A0B6633D29314AF100000509 /* GoogleAdapter.swift in Sources */,
+				A0B6633F29314EB600000509 /* TwitterAdapter.swift in Sources */,
+				A0B663392931486300000509 /* AuthentificationService.swift in Sources */,
+				A0B663362931477C00000509 /* TwitterAuthenticator.swift in Sources */,
 				A0B6632029312A0B00000509 /* AppDelegate.swift in Sources */,
 				A0B6632229312A0B00000509 /* SceneDelegate.swift in Sources */,
 			);
